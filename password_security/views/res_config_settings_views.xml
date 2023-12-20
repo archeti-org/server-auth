@@ -99,9 +99,10 @@
             </xpath>
 
             <!-- Move the minlength field to desired location -->
-            <xpath expr="//span[@id='minlength']" position="inside">
+            <!-- Remove this error to Fix error in xpath not exist in the original view-->
+            <!--  <xpath expr="//span[@id='minlength']" position="inside">
                 <xpath expr="//field[@name='minlength']" position="move" />
-            </xpath>
+            </xpath>-->
         </field>
     </record>
 </odoo>
